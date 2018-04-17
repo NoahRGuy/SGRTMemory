@@ -19,23 +19,6 @@
             <h1>SGRT Memory Game</h1>
         </header>
 
-        <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
-
-        	<span class="moves">0</span> Move(s)
-
-            <div class="timer">
-            </div>
-
-            <div class="restart" onclick="startGame()">
-        		<i class="fa fa-repeat"></i>
-        	</div>
-        </section>
-
         <ul class="deck" id="card-deck">
             <li class="card" type="diamond">
                 <i class="fa fa-diamond"></i>
@@ -92,6 +75,25 @@
                 <i class="fa fa-delicious"></i>
             </li>
         </ul>
+
+        <section class="score-panel">
+          <div class="left-side">
+            <ul class="stars">
+              <li><i class="fa fa-star fa-2x"></i></li>
+              <li><i class="fa fa-star fa-2x"></i></li>
+              <li><i class="fa fa-star fa-2x"></i></li>
+            </ul>
+            <span class="moves">0</span> <span class="other-moves">Move(s)</span>
+          </div>
+          <div class="right-side">
+              <div class="timer">
+              </div>
+
+              <div class="restart" onclick="startGame()">
+              <i class="fa fa-repeat fa-2x"></i>
+            </div>
+          </div>
+        </section>
 
         <div id="popup1" class="overlay">
             <div class="popup">

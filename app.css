@@ -17,7 +17,7 @@ body {
 }
 
 body {
-	background-image: url("images/pyramid_@2x.png");
+	background-image: url("images/pyramid_@2X.png");
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 }
@@ -115,8 +115,17 @@ h1 {
 
 
 .score-panel {
+	width: 70%;
 	text-align: left;
 	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.score-panel .right-side{
+	display: flex;
+	align-items: center;
 }
 
 .score-panel .stars {
@@ -134,6 +143,25 @@ h1 {
 .score-panel .restart {
 	float: right;
 	cursor: pointer;
+}
+
+.score-panel .moves{
+	font-size: 48px;
+}
+
+.score-panel .other-moves{
+	font-size: 48px;	
+}
+
+.score-panel .timer{
+	font-size: 48px;
+}
+
+.score-panel .restart{
+	margin: 0 auto;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
 }
 
 .fa-star {
