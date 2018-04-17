@@ -39,25 +39,13 @@ var displayCard = function(){
 	this.classList.toggle("disabled");
 }
 
-function shuffle(array){ //Fisher-Yates algorithm found here: https://bost.ocks.org/mike/shuffle/
-	var m = array.length, t, i;
-
-	while(m){
-		i = Math.floor(Math.random() * m--);
-
-		t = array[m];
-		array[m] = array[i];
-		array[i] = t;
-	}
-	return array;
-}
 
 document.body.onload = startGame();
 
 
 function startGame(){
 	openedCards = [];
-	cards = shuffle(cards);
+	cards = _.shuffle(cards);
 	for(let i = 0; i < cards.length; i++){
 		deck.innerHTML = "";
 		[].forEach.call(cards, function(item){
