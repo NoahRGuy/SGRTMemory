@@ -17,7 +17,7 @@ body {
 }
 
 body {
-	background: #ffffff;
+	background-image: url("images/pyramid_@2x.png");
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 }
@@ -40,7 +40,7 @@ h1 {
 
 
 .deck {
-	width: 85%;
+	width: 100%;
 	background: #716F71;
 	padding: 1rem;
 	border-radius: 4px;
@@ -325,13 +325,13 @@ h1 {
 	}
 
 	.deck {
-		width: 660px;
+		width: 70%;
 		height: 680px;
 	}
 
 	.deck .card {
-		height: 125px;
-		width: 125px;
+		height: 200px;
+		width: 200px;
 	}
 
 	.popup {

@@ -149,7 +149,7 @@ function moveCounter(){
 
 
 function congratulations(){
-	if(matchedCard.length == 16){
+	if(matchedCard.length == 18){
 		clearInterval(interval);
 		finalTime = timer.innerHTML;
 		modal.classList.add("show");
