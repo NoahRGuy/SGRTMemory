@@ -57,12 +57,12 @@ h1 {
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
 	/*background: #141214;*/
-	background-image: url("images/SGRT_graphic.jpg");
-	background-size: cover;
+	background-image: url("images/SGRT_community_logo.png");
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	font-size: 0;
-	color: #ffffff;
+	background-color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
 	display: flex;
@@ -81,6 +81,55 @@ h1 {
 	animation-duration: .75s;
 }
 
+.deck .card.open[type="abdomen"]{
+	background-image: url("images/Abdomen_Thorax.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="breast-imrt"]{
+	background-image: url("images/breast_IMRT.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="breast-tangents"]{
+	background-image: url("images/Breast_Tangents.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="cranio-spinal"]{
+	background-image: url("images/Cranio-spinal.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="hs"]{
+	background-image: url("images/H_S.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="pelvis"]{
+	background-image: url("images/Pelvis.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="logo"]{
+	background-image: url("images/SGRT_graphic.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="brain"]{
+	background-image: url("images/SRS_brain.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .deck .card.show {
 	font-size: 33px;
 }
@@ -93,6 +142,55 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
+}
+
+.deck .card.match[type="abdomen"]{
+	background-image: url("images/Abdomen_Thorax.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="breast-imrt"]{
+	background-image: url("images/breast_IMRT.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="breast-tangents"]{
+	background-image: url("images/Breast_Tangents.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="cranio-spinal"]{
+	background-image: url("images/Cranio-spinal.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="hs"]{
+	background-image: url("images/H_S.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="pelvis"]{
+	background-image: url("images/Pelvis.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="logo"]{
+	background-image: url("images/SGRT_graphic.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="brain"]{
+	background-image: url("images/SRS_brain.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .deck .card.unmatched {
@@ -341,6 +439,7 @@ h1 {
 		height: 4.7rem;
 		width: 4.7rem;
 	}
+
 }
 
 
@@ -353,13 +452,13 @@ h1 {
 	}
 
 	.deck {
-		width: 70%;
+		width: 660px;
 		height: 680px;
 	}
 
 	.deck .card {
-		height: 200px;
-		width: 200px;
+		height: 125px;
+		width: 125px;
 	}
 
 	.popup {

@@ -80,6 +80,7 @@ function openCard() {
 			unmatched();
 		}
 	}
+	console.log(matchedCard.length);
 }
 
 function matched(){
@@ -149,7 +150,8 @@ function moveCounter(){
 
 
 function congratulations(){
-	if(matchedCard.length == 18){
+	if(matchedCard.length == 16){
+		console.log("We're done here.");
 		clearInterval(interval);
 		finalTime = timer.innerHTML;
 		modal.classList.add("show");
