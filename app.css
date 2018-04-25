@@ -73,7 +73,6 @@ h1 {
 
 .deck .card.open {
 	transform: rotateY(0);
-	background: #02b3e4;
 	cursor: default;
 	animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
@@ -136,7 +135,6 @@ h1 {
 
 .deck .card.match {
 	cursor: default;
-	background: #E5F720;
 	font-size: 33px;
 	animation-name: rubberBand;
 	-webkit-backface-visibility: visible !important;
@@ -198,7 +196,6 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
-	background: #e2043b;
 }
 
 .deck .card.disabled {
