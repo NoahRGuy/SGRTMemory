@@ -31,8 +31,14 @@ body {
 
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
 }
 
+.header img{
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+}
 
 /*
  * Styles for the deck of cards
@@ -57,7 +63,7 @@ h1 {
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
 	/*background: #141214;*/
-	background-image: url("images/SGRT_community_logo.png");
+	background-image: url("images/Vision_RT.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
