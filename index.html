@@ -19,6 +19,9 @@
             <img src="images/Vision_RT.png" alt="">
           </div>
             <h1>SGRT Memory Game</h1>
+            <div class="instructions">
+              <h3>Instructions: Match each picture to it's corresponding phrase. Finish the game quickly for a higher score!</h3>
+            </div>
         </header>
 
         <ul class="deck" id="card-deck">
@@ -26,7 +29,7 @@
             </li>
             <li class="card" type="breast-imrt" backside="picture">
             </li>
-            <li class="card match" type="breast-tangents" backside="picture">
+            <li class="card" type="breast-tangents" backside="picture">
             </li>
             <li class="card" type="cranio-spinal" backside="picture">
             </li>
@@ -75,6 +78,18 @@
           </div>
         </section>
 
+         <section class="leaderboard">
+          <div class="leaderboard-section">
+            <h2>Leaderboard</h2>
+            <table id="leader-table">
+              <tr>
+                <th>Name</th>
+                <th>Time (Seconds)</th>
+              </tr>
+            </table>
+          </div>
+        </section>
+
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations 🎉</h2>
@@ -87,6 +102,10 @@
                     <p>in <span id=totalTime> </span> </p>
                     <p>Rating:  <span id=starRating></span></p>
                 </div>
+                <div class="score-sub">
+                  <input type="text" name="" placeholder="Type your name here!" id="scorename">
+                  <input type="submit" name="" onclick="updateLeaderboard()">
+                  </div>
                 <button id="play-again"onclick="playAgain()">
                     Play again 😄</a>
                 </button>
