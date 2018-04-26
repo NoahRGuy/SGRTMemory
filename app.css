@@ -34,6 +34,15 @@ h1 {
 	text-align: center;
 }
 
+.instructions{
+	width: 50%;
+	margin: 0 auto;
+}
+
+h3{
+	text-align: center;
+}
+
 .header-image{
 	margin: 0 auto;
 }
@@ -93,7 +102,7 @@ h1 {
 	animation-duration: .75s;
 }
 
-.deck .card.open[type="abdomen"]{
+.deck .card.open[type="abdomen"][backside="picture"]{
 	background-image: url("images/Abdomen_Thorax.jpg");
 	background-size: cover;
 	background-position: center;
@@ -113,7 +122,7 @@ h1 {
 	background-repeat: no-repeat;
 }
 .deck .card.open[type="breast-imrt"][backside="phrase"]{
-	background-image: url("images/breast_IMRT.jpg");
+	background-image: url("images/IMRT_Phrase.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -161,7 +170,7 @@ h1 {
 	background-repeat: no-repeat;
 }
 .deck .card.open[type="pelvis"][backside="phrase"]{
-	background-image: url("images/Pelvis.jpg");
+	background-image: url("images/Pelvis_Phrase.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -364,6 +373,18 @@ h1 {
 	margin: 0 1rem;
 }
 
+.leaderboard-section h2{
+	text-align: center;
+}
+
+#leader-table {
+	width: 50rem;
+}
+
+#leader-table th, tr{
+	text-align: center;
+}
+
 
 /*
  * Styles for congratulations modal
@@ -433,6 +454,11 @@ h1 {
 
 #starRating li {
 	display: inline-block;
+}
+
+.score-sub{
+	display: flex;
+	justify-content: center;
 }
 
 #play-again {
