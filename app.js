@@ -195,7 +195,7 @@ function moveCounter(){
 
 
 function congratulations(){
-	if(matchedCard.length == 16){
+	if(matchedCard.length == 18){
 		console.log("We're done here.");
 		clearInterval(interval);
 		finalTime = timer.innerHTML;

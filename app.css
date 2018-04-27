@@ -186,7 +186,7 @@ h3{
 	background-repeat: no-repeat;
 }
 .deck .card.open[type="logo"]{
-	background-image: url("images/SGRT_graphic.jpg");
+	background-image: url("images/SGRT_graphic_new.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -199,6 +199,18 @@ h3{
 }
 .deck .card.open[type="brain"][backside="phrase"]{
 	background-image: url("images/Brain_Phrase.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="vision-logo"][backside="picture"]{
+	background-image: url("images/SGRT_graphic.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.open[type="vision-logo"][backside="phrase"]{
+	background-image: url("images/SGRT_graphic.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -289,7 +301,7 @@ h3{
 	background-repeat: no-repeat;
 }
 .deck .card.match[type="logo"]{
-	background-image: url("images/SGRT_graphic.jpg");
+	background-image: url("images/SGRT_graphic_new.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -302,6 +314,18 @@ h3{
 }
 .deck .card.match[type="brain"][backside="phrase"]{
 	background-image: url("images/Brain_Phrase.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="vision-logo"][backside="picture"]{
+	background-image: url("images/SGRT_graphic.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.deck .card.match[type="vision-logo"][backside="phrase"]{
+	background-image: url("images/SGRT_graphic.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
