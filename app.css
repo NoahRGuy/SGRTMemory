@@ -37,7 +37,8 @@ body {
 }
 
 .main-content .leaderboard{
-	width: 15%;
+	width: 20%;
+	margin-right: 50px;
 }
 
 h1 {
@@ -610,13 +611,13 @@ h3{
 	}
 
 	.deck {
-		width: 1210px;
-		height: 625px;
+		width: 1320px;
+		height: 700px;
 	}
 
 	.deck .card {
-		height: 175px;
-		width: 175px;
+		height: 200px;
+		width: 200px;
 	}
 
 	.popup {
