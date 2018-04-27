@@ -16,14 +16,42 @@
 
     <div class="container">
           <div class="header-image">
-            <img src="images/Vision_RT.png" alt="">
           </div>
             <h1>SGRT Memory Game</h1>
-            <div class="instructions">
-              <h3>Instructions: Match each picture to it's corresponding phrase. Finish the game quickly for a higher score!</h3>
+            <div class="score-panel">
+              <div class="left-side">
+              <ul class="stars">
+                <li><i class="fa fa-star fa-2x"></i></li>
+                <li><i class="fa fa-star fa-2x"></i></li>
+                <li><i class="fa fa-star fa-2x"></i></li>
+              </ul>
+              <span class="moves">0</span> <span class="other-moves">Move(s)</span>
+              </div>
+              <div class="instructions">
+                <h3>Instructions: Match each ROI to the corresponding site protocol.</h3>
+              </div>
+              <div class="right-side">
+              <div class="timer">
+              </div>
+
+              <div class="restart" onclick="startGame()">
+              <i class="fa fa-repeat fa-2x"></i>
+            </div>
+          </div>
             </div>
         </header>
-
+    <div class="main-content">
+        <section class="leaderboard">
+          <div class="leaderboard-section">
+            <h2>Leaderboard</h2>
+            <table id="leader-table">
+              <tr>
+                <th>Name</th>
+                <th>Time (Seconds)</th>
+              </tr>
+            </table>
+          </div>
+        </section>
         <ul class="deck" id="card-deck">
             <li class="card" type="abdomen" backside="picture">
             </li>
@@ -57,39 +85,12 @@
             </li>
             <li class="card" type="brain" backside="phrase">
             </li>
+            <li class="card" type="brain" backside="phrase">
+            </li>
+            <li class="card" type="brain" backside="picture">
+            </li>
         </ul>
-
-        <section class="score-panel">
-          <div class="left-side">
-            <ul class="stars">
-              <li><i class="fa fa-star fa-2x"></i></li>
-              <li><i class="fa fa-star fa-2x"></i></li>
-              <li><i class="fa fa-star fa-2x"></i></li>
-            </ul>
-            <span class="moves">0</span> <span class="other-moves">Move(s)</span>
-          </div>
-          <div class="right-side">
-              <div class="timer">
-              </div>
-
-              <div class="restart" onclick="startGame()">
-              <i class="fa fa-repeat fa-2x"></i>
-            </div>
-          </div>
-        </section>
-
-         <section class="leaderboard">
-          <div class="leaderboard-section">
-            <h2>Leaderboard</h2>
-            <table id="leader-table">
-              <tr>
-                <th>Name</th>
-                <th>Time (Seconds)</th>
-              </tr>
-            </table>
-          </div>
-        </section>
-
+      </div>
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations 🎉</h2>

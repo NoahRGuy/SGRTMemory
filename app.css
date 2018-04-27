@@ -17,7 +17,9 @@ body {
 }
 
 body {
-	background-image: url("images/pyramid_@2X.png");
+	background-image: url("images/actual_background.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 }
@@ -29,13 +31,21 @@ body {
 	flex-direction: column;
 }
 
+.main-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-content .leaderboard{
+	width: 15%;
+}
+
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
 }
 
-.instructions{
-	width: 50%;
+.top{
 	margin: 0 auto;
 }
 
@@ -315,17 +325,22 @@ h3{
 
 
 .score-panel {
-	width: 70%;
 	text-align: left;
 	margin-bottom: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-direction: row;
 	align-items: center;
 }
 
 .score-panel .right-side{
 	display: flex;
 	align-items: center;
+}
+
+.score-panel .instructions{
+	width: 30%;
+	text-align: center;
 }
 
 .score-panel .stars {
@@ -354,14 +369,14 @@ h3{
 }
 
 .score-panel .timer{
-	font-size: 48px;
+	font-size: 64px;
 }
 
 .score-panel .restart{
 	margin: 0 auto;
 	padding: 0;
 	display: inline-block;
-	margin: 0 5px 0 0;
+	margin: 10px 5px 0 0;
 }
 
 .fa-star {
@@ -378,7 +393,7 @@ h3{
 }
 
 #leader-table {
-	width: 50rem;
+	width: 20rem;
 }
 
 #leader-table th, tr{
@@ -571,13 +586,13 @@ h3{
 	}
 
 	.deck {
-		width: 660px;
-		height: 680px;
+		width: 1210px;
+		height: 625px;
 	}
 
 	.deck .card {
-		height: 125px;
-		width: 125px;
+		height: 175px;
+		width: 175px;
 	}
 
 	.popup {
