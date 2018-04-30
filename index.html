@@ -15,33 +15,31 @@
 <body>
 
     <div class="container">
-          <div class="header-image">
-          </div>
-            
-            <div class="score-panel">
-              <div class="left-side">
-              <ul class="stars">
-                <li><i class="fa fa-star fa-2x"></i></li>
-                <li><i class="fa fa-star fa-2x"></i></li>
-                <li><i class="fa fa-star fa-2x"></i></li>
-              </ul>
-              <span class="moves">0</span> <span class="other-moves">Move(s)</span>
-              </div>
-              <div class="instructions">
-                <h3>SGRT Memory Game</h3>
-                <h5>Instructions: Match each ROI to the corresponding site protocol.</h5>
-              </div>
-              <div class="right-side">
-              <div class="timer">
-              </div>
-
-              <div class="restart" onclick="startGame()">
-              <i class="fa fa-repeat fa-2x"></i>
-            </div>
-          </div>
-            </div>
-        </header>
     <div class="main-content">
+      <div class="left-main">
+        <div class="instructions">
+          <h2>SGRT from Theory to Practice</h2>
+          <h3>Memory Game</h3>
+          <h4>Instructions: Match each ROI to the corresponding site protocol.</h4>
+        </div>
+        <div class="score-panel">
+        <div class="move-score">
+          <ul class="stars">
+            <li><i class="fa fa-star fa-2x"></i></li>
+            <li><i class="fa fa-star fa-2x"></i></li>
+            <li><i class="fa fa-star fa-2x"></i></li>
+          </ul>
+          <span class="moves">0</span> <span class="other-moves">Move(s)</span>
+        </div>
+        <div class="time-score">
+          <div class="timer">
+          </div>
+          <div class="restart" onclick="startGame()">
+            <i class="fa fa-repeat fa-2x"></i>
+          </div>
+        </div>
+        </div>
+
         <section class="leaderboard">
           <div class="leaderboard-section">
             <h2>Leaderboard</h2>
@@ -53,6 +51,8 @@
             </table>
           </div>
         </section>
+      </div>
+      <div class="right-main">
         <ul class="deck" id="card-deck">
             <li class="card" type="abdomen" backside="picture">
             </li>
@@ -86,11 +86,8 @@
             </li>
             <li class="card" type="brain" backside="phrase">
             </li>
-            <li class="card" type="vision-logo" backside="picture">
-            </li>
-            <li class="card" type="vision-logo" backside="phrase">
-            </li>
         </ul>
+        </div>
       </div>
         <div id="popup1" class="overlay">
             <div class="popup">

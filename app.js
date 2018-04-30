@@ -64,7 +64,7 @@ function setTimer(){
 
 function setLeaderboard(){
 	scoreboardHTML = "";
-	for(let i = 0; i < 10; i++){
+	for(let i = 0; i < 8; i++){
 		scoreboardHTML += "<tr><td>" + scoresArray[i].name + "</td><td>" + scoresArray[i].time + "</td></tr>";
 	}
 	scoreboard.innerHTML += scoreboardHTML
@@ -78,7 +78,7 @@ function updateLeaderboard(){
 
 	let resetInner = "<tr><th>Name</th><th>Time (Seconds)</th>";
 	var scoreboardHTML = "";
-	for(let i = 0; i < 10; i++){
+	for(let i = 0; i <8; i++){
 		scoreboardHTML += "<tr><td>" + scoresArray[i].name + "</td><td>" + scoresArray[i].time + "</td></tr>";
 	}
 	scoreboard.innerHTML = resetInner + scoreboardHTML;

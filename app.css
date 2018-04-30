@@ -37,14 +37,9 @@ body {
 }
 
 .main-content .leaderboard{
-	width: 20%;
-	margin-right: 50px;
+	width: 50%;
 }
 
-h1 {
-	font-family: 'Gloria Hallelujah', cursive;
-	text-align: center;
-}
 
 .top{
 	margin: 0 auto;
@@ -54,23 +49,20 @@ h3{
 	text-align: center;
 }
 
-.header-image{
-	margin: 0 auto;
-}
-
-.header-image img{
-	display: block;
-	width: 50%;
-	height: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+.left-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*
  * Styles for the deck of cards
  */
 
+.right-main{
+	margin-top: 1.5rem;
+}
 
 .deck {
 	width: 100%;
@@ -82,7 +74,6 @@ h3{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 0 3em;
 }
 
 .deck .card {
@@ -354,7 +345,7 @@ h3{
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: space-around;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 }
 
@@ -362,10 +353,9 @@ h3{
 	display: flex;
 	align-items: center;
 }
-
-.score-panel .instructions{
-	width: 30%;
+.instructions{
 	text-align: center;
+	width: 50%;
 }
 
 .score-panel .stars {
@@ -413,6 +403,10 @@ h3{
 	margin: 0 1rem;
 }
 
+.time-score i{
+	margin-top: 1.2rem;
+}
+
 .leaderboard-section h2{
 	text-align: center;
 }
@@ -423,6 +417,9 @@ h3{
 
 #leader-table th, tr{
 	text-align: center;
+}
+tr{
+	
 }
 
 
@@ -611,8 +608,8 @@ h3{
 	}
 
 	.deck {
-		width: 1320px;
-		height: 700px;
+		width: 1060px;
+		height: 905px;
 	}
 
 	.deck .card {
