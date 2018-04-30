@@ -28,16 +28,16 @@ class Score{
 	}
 }
 
-let s1 = new Score('John Doe', 40);
-let s2 = new Score('John Doe', 45);
-let s3 = new Score('John Doe', 50);
-let s4 = new Score('John Doe', 55);
-let s5 = new Score('John Doe', 60);
-let s6 = new Score('John Doe', 65);
-let s7 = new Score('John Doe', 70);
-let s8 = new Score('John Doe', 75);
-let s9 = new Score('John Doe', 80);
-let s0 = new Score('John Doe', 85);
+let s1 = new Score('John Doe', 90);
+let s2 = new Score('John Doe', 95);
+let s3 = new Score('John Doe', 100);
+let s4 = new Score('John Doe', 105);
+let s5 = new Score('John Doe', 110);
+let s6 = new Score('John Doe', 115);
+let s7 = new Score('John Doe', 120);
+let s8 = new Score('John Doe', 125);
+let s9 = new Score('John Doe', 130);
+let s0 = new Score('John Doe', 135);
 
 let scoresArray = [];
 scoresArray.push(s1, s2, s3, s4, s5, s6, s7, s8, s9, s0);
