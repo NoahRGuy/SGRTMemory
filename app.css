@@ -407,6 +407,10 @@ h3{
 	margin-top: 1.2rem;
 }
 
+.time-score .restart h5 {
+	color: white;
+}
+
 .leaderboard-section h2{
 	text-align: center;
 }
